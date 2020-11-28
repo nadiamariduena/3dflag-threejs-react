@@ -1,0 +1,17 @@
+{
+  "editor.fontSize": 18, //sets the font size of the editor
+  "inlinePreview.disabled": false,
+  /*
+  Disables the inline-preview, this is useful if you are working
+  on something resource-intensive, but runtime errors will no longer
+  be reported.
+    */
+  "javascript.eslint.disabled": true
+  /*
+    disabled eslint. This is useful if you are working
+    with large js files, but errors and warnings will no 
+    longer be reported.
+    */
+}
+
+//  WHY DO YOU USE THIS ????
