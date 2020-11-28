@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { useLoader } from "react-three-fiber";
 import * as THREE from "three";
 //
 //
@@ -41,7 +42,8 @@ class App extends Component {
     //
     //
     var material = new THREE.MeshBasicMaterial({
-      color: 0x00ff00,
+      // color: 0x00ff00,
+      map: loader.load("./src/img/NataliaSamoilova_metalmagazine-10.jpg"),
     });
     //
     //
