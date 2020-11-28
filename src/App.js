@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import * as THREE from "three";
 //
 //
@@ -111,6 +110,9 @@ class App extends Component {
     //
     //
   }
+  //
+  //------------------
+  //
   render() {
     return <section ref={(ref) => (this.mount = ref)} className="flag" />;
   }
