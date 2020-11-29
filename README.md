@@ -284,3 +284,33 @@ var material = new THREE.MeshBasicMaterial({
 ```
 
 [<img src="./src/img/flag-test-react-version.gif">](https://github.com/nadiamariduena/3d-waving-flag-threejs)
+
+### STUPID ERROR
+
+- SO AFTER SEARCHING for the solution, i found out that the image issue was related to the path in the image
+
+<br>
+
+##### Explanation from stackoverflow ⚠️
+
+[3React + three.js: Error thrown by TextureLoader when trying to loading image
+](https://stackoverflow.com/questions/51585734/react-three-js-error-thrown-by-textureloader-when-trying-to-loading-image)
+
+> _From what directory is your web server being run?_
+
+> If your web server is running from say, the /public directory, then you will likely need to update your image path that is passed to your textureLoader's load method as follows:
+
+> textureLoader.load('/animation/js/img/texture1.png',
+
+### So I copied the img folder and added it to the public then i changed the path like so:
+
+```javascript
+var material = new THREE.MeshBasicMaterial({
+  // color: 0x00ff00,
+  map: loader.load("/img/NataliaSamoilova_metalmagazine-10.jpg"),
+});
+```
+<br>
+<br>
+
+[<img src="./src/img/flag-test-react-version_finally-image.gif">]()

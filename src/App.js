@@ -43,7 +43,7 @@ class App extends Component {
     //
     var material = new THREE.MeshBasicMaterial({
       // color: 0x00ff00,
-      map: loader.load("./src/img/NataliaSamoilova_metalmagazine-10.jpg"),
+      map: loader.load("/img/NataliaSamoilova_metalmagazine-10.jpg"),
     });
     //
     //
