@@ -288,6 +288,10 @@ var material = new THREE.MeshBasicMaterial({
 ### STUPID ERROR
 
 - SO AFTER SEARCHING for the solution, i found out that the image issue was related to the path in the image
+  <br>
+- ALSO
+  <br>
+  > KEEP IN MIND that its grabbing the images from the public/images folder not the src
 
 <br>
 
@@ -310,6 +314,7 @@ var material = new THREE.MeshBasicMaterial({
   map: loader.load("/img/NataliaSamoilova_metalmagazine-10.jpg"),
 });
 ```
+
 <br>
 <br>
 
